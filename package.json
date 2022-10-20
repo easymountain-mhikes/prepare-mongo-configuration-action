@@ -1,0 +1,31 @@
+{
+  "name": "sources",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js configuration.js"
+  },
+  "keywords": [
+    "GitHub",
+    "Actions",
+    "Setup",
+    "Maven"
+  ],
+  "author": "Benjamin Einaudi",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/easymountain-mhikes/prepare-mongo-configuration-action.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/easymountain-mhikes/prepare-mongo-configuration-action/issues"
+  },
+  "homepage": "https://github.com/easymountain-mhikes/prepare-mongo-configuration-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.25.0"
+  }
+}

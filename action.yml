@@ -1,0 +1,30 @@
+name: 'Prepare mongo configuration'
+description: 'Prepare the configuration/config.properties mongo configuration'
+inputs:
+  file-location:
+    description: "The file that will be generated (default 'configuration/config.properties'"
+    required: false
+    default: "configuration/config.properties"
+  host:
+    description: "The mongo db host (default 'mongo')"
+    required: false
+    default: "mongo"
+  port:
+    description: "The mongo db port (default '27017')"
+    required: false
+    default: "27017"
+  database-name:
+    description: "The mongo database name (default 'test')"
+    required: false
+    default: "test"
+  wait-time:
+    description: "The 'maxWaitTime' parameter (default '1000')"
+    required: false
+    default: "1000"
+  connection-timeout:
+    description: "The 'connectionTimeout' parameter (default '100')"
+    required: false
+    default: "100"
+runs:
+  using: 'node16'
+  main: 'index.js'
